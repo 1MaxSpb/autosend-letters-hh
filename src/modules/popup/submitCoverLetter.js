@@ -28,7 +28,7 @@ export async function submitCoverLetter(vacancyTitle) {
   const sendBtn = document.querySelector(SELECTORS.sendBtn);
 
   // Вставляем сопроводительное письмо
-  insertCoverLetter(CONSTANTS.coverLetter, vacancyTitle);
+  await insertCoverLetter(CONSTANTS.coverLetter, vacancyTitle);
 
   // Нажимаем кнопку "Отправить"
   sendBtn.click();

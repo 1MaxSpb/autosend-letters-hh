@@ -10,6 +10,9 @@ import { addResponseBtn } from './modules/interface/addResponseBtn';
 // Импортируем функцию, которая добавляет кнопку "Поддержать проект"
 import { addSponsorBtn } from './modules/interface/addSponsorBtn';
 
+// Импортируем функцию, которая добавляет кнопку "Настройки AutoSend"
+import { addConfigBtn } from './modules/interface/addConfigBtn';
+
 // Основная точка входа в приложение
 (async function main() {
   // Запрещаем переход на другие страницы
@@ -17,6 +20,9 @@ import { addSponsorBtn } from './modules/interface/addSponsorBtn';
 
   // Продолжаем отправку откликов после обновления страницы
   // await resumeMultiSubmit();
+
+  // Добавляем кнопку "Настройки AutoSend"
+  await addConfigBtn();
 
   // Добавляем кнопку "Отправить отклики"
   await addResponseBtn();

@@ -25,7 +25,7 @@ export async function submitCoverLetterPopup(vacancyTitle) {
   await delay(CONSTANTS.delayMs);
 
   // Вставляем сопроводительное письмо
-  insertCoverLetter(CONSTANTS.coverLetter, vacancyTitle);
+  await insertCoverLetter(CONSTANTS.coverLetter, vacancyTitle);
 
   // Нажимаем кнопку "Откликнуться"
   respondBtn.click();
